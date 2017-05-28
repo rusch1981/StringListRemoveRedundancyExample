@@ -43,6 +43,15 @@ namespace StringListRemoveRedundancyExample
             {
                 Console.WriteLine(uniqueWord);
             }
+
+            Console.WriteLine();
+
+            var uniqueWords4 = new HashSet<string>(words);
+
+            foreach (var uniqueWord in uniqueWords4)
+                Console.WriteLine(uniqueWord);
+
+            Console.WriteLine();
         }
     }
 }
