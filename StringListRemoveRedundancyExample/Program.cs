@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StringListRemoveRedundancyExample
 {
@@ -28,7 +26,7 @@ namespace StringListRemoveRedundancyExample
 
             Console.WriteLine();
 
-            var uniqueWords2 = StringListRedundancyRemover.RemoveRedendancy2(words);
+            var uniqueWords2 = StringListRedundancyRemover.RemoveRedundancy2(words);
 
             foreach (var uniqueWord in uniqueWords2)
             {
@@ -50,6 +48,20 @@ namespace StringListRemoveRedundancyExample
 
             foreach (var uniqueWord in uniqueWords4)
                 Console.WriteLine(uniqueWord);
+
+            Console.WriteLine();
+
+            foreach (var uniqueWord in StringListRedundancyRemover.RemoveRedundancy3(words))
+            {
+                Console.WriteLine(uniqueWord);
+            }
+
+            Console.WriteLine();
+
+            foreach (var uniqueWord in StringListRedundancyRemover.RemoveRedundancy4(words))
+            {
+                Console.WriteLine(uniqueWord);
+            }
 
             Console.WriteLine();
         }
